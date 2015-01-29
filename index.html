@@ -7,10 +7,19 @@
 	<body>
 
 		<div class='controller-check'> {{test}} </div>
-
+			<br />
+			<br />
+			<br />
+			<br />
 		<div class='question-box'>
 			<input type="text" placeholder='What is your question?!' ng-model='questionRequest' />
-			<button ng-click='postData()'> Ask It! </button>
+			<button class='quest-but' ng-click='postData()'> Ask It! </button>
+
+		</div>
+
+		<div ng-repeat='text in questions'>
+			{{text.question}} <br />
+			{{text.objectId}}
 
 		</div>
 

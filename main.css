@@ -3,6 +3,7 @@ html, body {
 	margin: 0;
 	height: 100%;
 	width: 100%;
+	padding: 10px;
 }
 
 .controller-check {
@@ -10,3 +11,13 @@ html, body {
 	padding: 5px;
 }
 
+.quest-but {
+	border-radius: 30%;
+	background: rgb(120, 207, 245);
+	border: 0;
+	height: 20px;
+}
+
+input {
+	height: 30px;
+}

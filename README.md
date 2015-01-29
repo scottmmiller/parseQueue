@@ -132,7 +132,7 @@ As a reminder, here is the anatomy of a POST GET PUT and DELETE request in Angul
 
 <hr>
  -->
-After creating our POST request, we need to head over to the controller so that our users can create data on their own from the view. 
+<!-- After creating our POST request, we need to head over to the controller so that our users can create data on their own from the view. 
 
 In the controller create a postData function. This function will take in our question from the view and pass it into the service. Refer to the chat app, it will have a very similar function.
 
@@ -145,9 +145,9 @@ In the index file we need:
 	<li>A button that submits our question into postData function in our controller (ng-click) </li>
 </ul>
 
-Once everything is in place, we should be able to ask a question from our browser and then see that question in our Parse dashboard. 
+Once everything is in place, we should be able to ask a question from our browser and then see that question in our Parse dashboard.  -->
 
-#Step 3 - Retrieving Questions
+<!-- #Step 3 - Retrieving Questions
 
 Once we are able to save our questions to our Parse database we will want to retrieve those questions so that we can see them in our view! 
 
@@ -166,14 +166,14 @@ Now at the bottom of our getParseData function let's add a console.log that will
 
 If we enter a question we should see an array of objects in our console. 
 
-Now you can show your in your view:
+Now you can show your data in your view:
 
 <ul>
 	<li>ng-repeat through the array showing the 'text' of each question</li>
 	<li>Make sure that now when you add a new question it shows up instantly in the list of questions.</li>
 </ul>
 
-If everything is working it's time to move into editing our questions!
+ If everything is working it's time to move into editing our questions!-->
 
 #Step 4 - Editing Questions
 

@@ -6,12 +6,22 @@ app.controller('MainController', function($scope, parseService) {
 
 	$scope.postData = function() {
 		var question = $scope.questionRequest;
-		parseService.postQuestion(question).then(function(serviceResponse){
-			console.log(serviceResponse)
-		}, function(error) {
-			console.log(error);
-		})
+		parseService.postQuestion(question)
+			.then(function(serviceResponse){
+				console.log(serviceResponse)
+				$scope.getParseData();
+			}, function(error) {
+				console.log(error);
+			})
 
 	};
+
+	$scope.getParseData = function(id) {
+		parseService.getData(id)
+			.then(function(response) {
+				$scope.questions = response.data.results;
+		})
+	}
+	$scope.getParseData();
 
 });
