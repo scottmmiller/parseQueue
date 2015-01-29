@@ -24,4 +24,11 @@ app.controller('MainController', function($scope, parseService) {
 	}
 	$scope.getParseData();
 
+	$scope.changeStatus = function() {
+		parseService.updateData()
+			.then(function() {
+				
+			})
+	}
+
 });

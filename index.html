@@ -19,16 +19,17 @@
 
 		<div ng-repeat='text in questions'>
 			{{text.question}} <br />
-			{{text.objectId}}
-
+			{{text.objectId}} <br />
+			<button class="status-update" ng-click='changeStatus()'> Update Status </button>
+			<br />
 		</div>
 
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
 		<script type="text/javascript" src='js/app.js'></script>
 		<script type="text/javascript" src='js/defaultHeaders.js'></script>
-		<script type="text/javascript" src='js/controllers/MainController.js'></script>
 		<script type="text/javascript" src='js/services/parseService.js'></script>
+		<script type="text/javascript" src='js/controllers/MainController.js'></script>
 
 	</body>
 </html>

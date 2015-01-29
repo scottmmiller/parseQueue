@@ -10,7 +10,8 @@ app.service('parseService', function($http, $q) {
 			method: 'POST',
 			url: 'https://api.parse.com/1/classes/questions',
 			data: {
-				question: userQuestion
+				question: userQuestion, 
+				status: 'red',
 			}
 		}).then(function(httpResponse) {
 			deferred.resolve(httpResponse);
@@ -32,7 +33,19 @@ app.service('parseService', function($http, $q) {
 				url: 'https://api.parse.com/1/classes/questions/' + id
 			})
 		}
+	}
+
+	this.updateData = function(id) {
 		
+		return $http({
+			method: 'PUT',
+			url: 'https://api.parse.com/1/classes/questions' + id,
+			data: {
+				question: userQuestion,
+				id: objectId,
+				status: 'red'
+			}
+		})
 	}
 
 
