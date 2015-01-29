@@ -6,7 +6,13 @@
 	</head>
 	<body>
 
-		<div> {{test}}</div>
+		<div class='controller-check'> {{test}} </div>
+
+		<div class='question-box'>
+			<input type="text" placeholder='What is your question?!' ng-model='questionRequest' />
+			<button ng-click='postData()'> Ask It! </button>
+
+		</div>
 
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
