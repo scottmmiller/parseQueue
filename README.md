@@ -61,7 +61,7 @@ Then, create a test:
 	<li>Call the $scope.test object in view to ensure it's pulling the value from the controller.</li>
 </ul>
  -->
-#Step 2 - Creating Questions
+<!-- #Step 2 - Creating Questions
 
 We will begin by making it possible to create questions, primarily because this is the most important feature of our queue. 
 
@@ -83,7 +83,7 @@ As a reminder, here is the anatomy of a POST GET PUT and DELETE request in Angul
 	<ul>
 		<li>The *method* of the request</li>		
 		<li>The data object you're passing in</li>
-		<li>the URL of the reqest</li>
+		<li>the URL of the request</li>
 	</ul>
 	<li>An appended promise object</li>
 	<li>lastly return the promise object</li>
@@ -131,7 +131,7 @@ As a reminder, here is the anatomy of a POST GET PUT and DELETE request in Angul
 </ul>
 
 <hr>
-
+ -->
 After creating our POST request, we need to head over to the controller so that our users can create data on their own from the view. 
 
 In the controller create a postData function. This function will take in our question from the view and pass it into the service. Refer to the chat app, it will have a very similar function.
