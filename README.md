@@ -1,4 +1,4 @@
-#Introduction
+<!-- #Introduction
 
 Today we are going to be building a queue app similar to the one we use during class. Instead of a Firebase backend though, we will be using Parse. 
 
@@ -26,14 +26,14 @@ To do that create a file in your js folder called 'defaultHeaders.js'. Then copy
 ````
 
 
-Parse is good because it encourages us to create a RESTful API. We will learn how to make the 4 HTTP requests with AgularJS:
+Parse is good because it encourages us to create a RESTful API. We will learn how to make the 4 HTTP requests with AngularJS:
 
 <ul>
 	<li>GET - retrieve data</li>
 	<li>POST - create data</li>
 	<li>PUT - edit data</li>
 	<li>DELETE - delete data</li>
-</ul>
+</ul> -->
 
 #Step 1 - Set Up Application
 
