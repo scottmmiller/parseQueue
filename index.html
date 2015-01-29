@@ -1,10 +1,18 @@
-<DOCTYPE html>
-<html>
-<head>
-	<title>ParseQ</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html ng-app='parseQ' ng-controller='MainController'>
+	<head>
+		<link rel="stylesheet" href="main.css" />
+		<title>ParseQ</title>
+	</head>
+	<body>
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
-</body>
+		<div> {{test}}</div>
+
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+		<script type="text/javascript" src='js/app.js'></script>
+		<script type="text/javascript" src='js/controllers/MainController.js'></script>
+		<script type="text/javascript" src='js/services/parseService.js'></script>
+
+	</body>
 </html>
