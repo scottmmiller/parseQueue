@@ -16,6 +16,7 @@ app.controller('MainController', function($scope, parseService) {
 
 	};
 
+
 	$scope.getParseData = function(id) {
 		parseService.getData(id)
 			.then(function(response) {
@@ -24,7 +25,17 @@ app.controller('MainController', function($scope, parseService) {
 	}
 	$scope.getParseData();
 
-	$scope.changeStatus = function() {
+
+	$scope.escalateQuery = function(id) {
+		parseService.updateData(id)
+			.then(function() {
+				getParseData();
+			})
+	}
+
+
+
+	$scope.deleteQuery = function() {
 		parseService.updateData()
 			.then(function() {
 				

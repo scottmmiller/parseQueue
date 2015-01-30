@@ -39,11 +39,9 @@ app.service('parseService', function($http, $q) {
 		
 		return $http({
 			method: 'PUT',
-			url: 'https://api.parse.com/1/classes/questions' + id,
+			url: 'https://api.parse.com/1/classes/questions/' + id,
 			data: {
-				question: userQuestion,
-				id: objectId,
-				status: 'red'
+				status: 'yellow'
 			}
 		})
 	}

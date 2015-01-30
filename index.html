@@ -17,10 +17,17 @@
 
 		</div>
 
-		<div ng-repeat='text in questions'>
+		<div ng-repeat='text in questions | filter: {status: "red"'>
 			{{text.question}} <br />
 			{{text.objectId}} <br />
-			<button class="status-update" ng-click='changeStatus()'> Update Status </button>
+			<button class="status-update" ng-click='escalteQuery()'> Escalate Query </button>
+			<br />
+		</div>
+			<br />
+		<div ng-repeat='text in questions | filter: {status: "yellow"'>
+			{{text.question}} <br />
+			{{text.objectId}} <br />
+			<button class="status-update" ng-click='deleteQuery()'> Delete Query </button>
 			<br />
 		</div>
 
