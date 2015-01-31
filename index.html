@@ -6,30 +6,36 @@
 	</head>
 	<body>
 
-		<div class='controller-check'> {{test}} </div>
+		<div class='controller-test'> {{test}} </div>
 			<br />
 			<br />
-			<br />
-			<br />
+			<!-- //Question Box -->
 		<div class='question-box'>
+			<h3> What would you like to know?!?!</h3>
 			<input type="text" placeholder='What is your question?!' ng-model='questionRequest' />
 			<button class='quest-but' ng-click='postData()'> Ask It! </button>
-
 		</div>
 
-		<div ng-repeat='text in questions | filter: {status: "red"'>
-			{{text.question}} <br />
-			{{text.objectId}} <br />
-			<button class="status-update" ng-click='escalteQuery()'> Escalate Query </button>
+
+			<!-- Pending Help -->
+		<h3>Waiting to be answered...</h3>
+			<div ng-repeat='text in questions | filter: {status: "red"}'>
+				{{text.question}} <br />
+				{{text.objectId}} <br />
+				<button class="status-update" ng-click='escalateQuery(text)'> Escalate Query </button>
+				<br />
+			</div>
 			<br />
-		</div>
-			<br />
-		<div ng-repeat='text in questions | filter: {status: "yellow"'>
-			{{text.question}} <br />
-			{{text.objectId}} <br />
-			<button class="status-update" ng-click='deleteQuery()'> Delete Query </button>
-			<br />
-		</div>
+
+
+			<!-- Being Helped -->
+		<h3>Being processed...</h3>
+			<div ng-repeat='text in questions | filter: {status: "yellow"}'>
+				{{text.question}} <br />
+				{{text.objectId}} <br />
+				<button class="status-update" ng-click='deleteQuery(text)'> Delete Query </button>
+				<br />
+			</div>
 
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>

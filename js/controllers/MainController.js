@@ -26,18 +26,18 @@ app.controller('MainController', function($scope, parseService) {
 	$scope.getParseData();
 
 
-	$scope.escalateQuery = function(id) {
-		parseService.updateData(id)
+	$scope.escalateQuery = function(text) {
+		parseService.updateData(text.objectId)
 			.then(function() {
-				getParseData();
+				$scope.getParseData();
 			})
 	}
 
 
-
-	$scope.deleteQuery = function() {
-		parseService.updateData()
+	$scope.deleteQuery = function(text) {
+		parseService.deleteData(text.objectId)
 			.then(function() {
+				$scope.getParseData();
 				
 			})
 	}

@@ -175,7 +175,7 @@ Now you can show your data in your view:
 
  If everything is working it's time to move into editing our questions!-->
 
-#Step 4 - Editing Questions
+<!-- #Step 4 - Editing Questions
 
 Once we have a list of students asking questions in the queue, we need to be able to escalate those questions to show which ones are being handled. 
 
@@ -210,7 +210,7 @@ Once we have answered someones question, we want to remove it from the list. We 
 
 Now we should be able to delete our questions once they have been answered! 
 
-Wowee!
+Wowee! -->
 
 
 
